@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import QRCode from 'qrcode.react';
-import { toPng, toSvg } from 'html-to-image';
+import { toPng } from 'html-to-image';
 
 const QRCodeDisplay = ({ qrCodeData, qrColor }) => {
   const [downloadFormat, setDownloadFormat] = useState('svg'); // По умолчанию скачиваем SVG
